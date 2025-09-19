@@ -7,30 +7,45 @@
     </head>
     
     <header>
-        <h1>Odin Recipes</h1>
+        <h1 class="logo">Odin Recipes</h1>
         <ul>
-            <li>Breakfast</li>
-            <li>Lunch</li>
-            <li>Dinner</li>
+            <li><a href="#">Breakfast</a></li>
+            <li><a href="#">Lunch</a></li>
+            <li><a href="#">Dinner</a></li>
         </ul>
     </header>
 
     <body>
         <div class="header">
-            <h3>My Favorite Meals for Each Time of Day</h3>
-                <p>The following is a glance at my favorite meals for each time of day. Want to vote on your favorite meal? Click the link below to vote:</p>
-                <button class="vote" type="button">Vote Favorite Meal</button>
-            <img src="/breakfast-lunch-and-dinner-day-menu.jpg" alt="image of breakfast, lunch and dinner foods"/>
+            <div class="header-text">
+                <h3 class="header-title">My Favorite Meals for Each Time of Day</h3>
+                <p class="header-sub-text">The following is a glance at my favorite meals for each time of day. Want to vote on your favorite meal? Click the link below to vote:</p>
+                    <button class="vote" type="button">Vote Favorite Meal</button>
+            </div>  
+            <div class="img-header">
+                <img src="/images/breakfast-lunch-and-dinner-day-menu.jpg" alt="image of breakfast, lunch and dinner foods" width="400" height="200"/>
+            </div>
+            
         </div>
 
         <div class="meals">
-            <h3>The Main Courses</h3>
-            <img src="" alt=""/>
-                <p>A quick easy go-to meal to start your day right</p>
-            <img src="" alt=""/>
-                <p>The can't go without meal to keep your energy up for the day</p>
-            <img src="" alt=""/>
-                <p>Finally, the look-forward to meal. An easy family recipe.</p>
+            <h3 class="meals-header">The Main Courses</h3>
+            <div class="meal-choices">
+                <div class="breakfast">
+                    <img src="/images/overnight-oats.jpeg" class="img" alt="different overnight oat choices" width="120" height="120"/>
+                    <p>A quick easy go-to meal to start your day right</p>
+                </div>
+                <div class="lunch">
+                    <img src="/images/deli-sub.jpg" class="img" alt="footlong sub with meats and veggies" width="120" height="120"/>
+                    <p>The can't go without meal to keep your energy up for the day</p>
+                </div>
+                <div class="dinner">
+                    <img src="/images/dads-chili.jpg" class="img" alt="chili with pasta shells" width="120" height="120"/>
+                    <p>Finally, the look-forward to meal. An easy family recipe.</p>
+                </div>
+                
+            </div>
+            
         </div>
 
         <div class="quote">
@@ -38,8 +53,10 @@
         </div>
 
         <div class="more-info">
-            <h4>Want to see more meals? Sign up for more!</h4>
-            <p>Click the Sign Up link for more</p>
+            <div>
+                <h4>Want to see more meals? Sign up for more!</h4>
+                <p>Click the Sign Up link for more</p>
+            </div>
             <button class="sign-up" type="button">Sign Up</button>
         </div>
 
